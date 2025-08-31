@@ -1,0 +1,33 @@
+﻿<div class="crt-screen @(NoFlicker ? "no-flicker" : null)" style="@_style">
+    <div class="crt-content">
+        @ChildContent
+    </div>
+
+    <div class="crt-bulge-highlight" aria-hidden="true"></div>  @* NEW *@
+    <div class="crt-bulge-shadow" aria-hidden="true"></div>     @* NEW *@
+    <div class="crt-scanline" aria-hidden="true"></div>
+</div>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string PhosphorColor { get; set; } = "#9cff8a";
+    [Parameter] public double Glow { get; set; } = 0.9;
+    [Parameter] public double ScanlineStrength { get; set; } = 0.35;
+    [Parameter] public double MaskStrength { get; set; } = 0.25;
+    [Parameter] public double Curvature { get; set; } = 0.012;
+    [Parameter] public double Bulge { get; set; } = 0.006;
+    [Parameter] public bool NoFlicker { get; set; } = false;
+
+    private string _style = string.Empty;
+
+    protected override void OnParametersSet()
+    {
+        _style =
+            $"--crt-phosphor:{PhosphorColor};" +
+            $"--crt-glow:{Glow};" +
+            $"--crt-scan:{ScanlineStrength};" +
+            $"--crt-mask:{MaskStrength};" +
+            $"--crt-curv:{Curvature};" +
+            $"--crt-bulge:{Bulge};";
+    }
+}
