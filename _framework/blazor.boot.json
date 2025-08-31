@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CrtTest2",
   "resources": {
-    "hash": "sha256-d3ascNPrP8v/XTlYoyOkNtFeQJ1SAmmmJcf4xVt18kc=",
+    "hash": "sha256-yhFqrgS6n0RMqa3AAbXXW0CeRv1+r/0XKNZ8TLeYuFU=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-O/NCYcAN9uPocD7ns7AzF/cqx7f5vL1PTJCQs0vEXyk="
     },
@@ -47,7 +47,7 @@
       "System.Text.Json.wasm": "sha256-A1HN3bXTetxuVki5znW2VIwMjHcksrEllPX7HCT9osI=",
       "System.Text.RegularExpressions.wasm": "sha256-amyl1Zsuf+PHSXqju/cl50LQlTKfUNpDi6hcFh10yrM=",
       "System.Private.CoreLib.wasm": "sha256-Q6tFlOnIziewayAN1w0PU33gH2RiZdXKR0XA85gKYjw=",
-      "CrtTest2.wasm": "sha256-DADp+oM6ZlRW6ot+tx/wjvgNdilJcPrrAhT9885za6A="
+      "CrtTest2.wasm": "sha256-bReBf2u+hFomL3tONl44BarT4WFak+O1rcUa31GS1AE="
     }
   },
   "cacheBootResources": true,
